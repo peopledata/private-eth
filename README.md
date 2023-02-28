@@ -83,7 +83,11 @@ INFO [02-27|18:27:48.734] Successfully wrote genesis state         database=ligh
 ## 4. Accessing the Blockchain on the network
 
 ```bash
-geth --networkid <your assigment> --datadir <data1>  --ipcdisable --syncmode full --http --http.addr 0.0.0.0 --http.api admin,eth,miner,net,txpool,personal,web3 --allow-insecure-unlock --http.corsdomain "*" --http.vhosts "*"  console 
+geth --identity "peopledata-private-eth-<node #>"  \ 
+--networkid <your assigment> --datadir <data1>  \ 
+--ipcdisable --syncmode full --http --http.addr 0.0.0.0 \
+--http.api admin,eth,miner,net,txpool,personal,web3 --allow-insecure-unlock \
+--http.corsdomain "*" --http.vhosts "*"  console 
 ```
 
 
