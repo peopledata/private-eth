@@ -98,12 +98,14 @@ Go to settings > network > Add network (to add a network).
 ## 6. Interact with the blockchain on the console
 At this point, you can interact with the blockchain you’ve created by using the console in JavaScript.
 Here is some commands you can try:
+```js
 miner.start() // mine new blocks
 miner.stop() // stop mining blocks
 web3.fromWei(web3.eth.getBalance("0x...")) // Get the balance of an address
 
 admin.nodeInfo() //list some informations about the node
 eth.blockNumber() // print the current block number
+```
 You can send transactions from your metamask network too, but don’t forget to activate the miner for validating the transaction.
 
 ### 
